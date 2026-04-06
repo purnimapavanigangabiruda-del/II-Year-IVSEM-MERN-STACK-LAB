@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let a = parseInt(prompt("Enter first number"))
+  let b = parseInt(prompt("Enter second number"))
+  let c = parseInt(prompt("Enter third number"))
+
+  if (a === b && b === c) {
+    document.write("<p>EQUAL NUMBERS</p>")
+  } else if (a >= b && a >= c) {
+    document.write("<p>" + a + " LARGER NUMBER</p>")
+  } else if (b >= a && b >= c) {
+    document.write("<p>" + b + " LARGER NUMBER</p>")
+  } else {
+    document.write("<p>" + c + " LARGER NUMBER</p>")
+  }
+</script>
+</body>
+</html>

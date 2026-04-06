@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let n = parseInt(prompt("Enter a number"))
+
+  function factorial(n) {
+    if (n === 0) return 1
+    return n * factorial(n - 1)
+  }
+
+  function fibonacci(n) {
+    let a = 0, b = 1
+    document.write("Fibonacci: ")
+    for (let i = 0; i < n; i++) {
+      document.write(a + " ")
+      let temp = a + b
+      a = b
+      b = temp
+    }
+  }
+
+  document.write("<p>Factorial of " + n + " = " + factorial(n) + "</p>")
+  fibonacci(n)
+</script>
+</body>
+</html>

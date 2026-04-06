@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Element */
+  p { color: blue; }
+
+  /* ID */
+  #main { font-size: 20px; }
+
+  /* Class */
+  .highlight { background: yellow; }
+
+  /* Group */
+  h1, h2 { color: green; }
+
+  /* Universal */
+  * { font-family: Arial; }
+
+  /* Descendant */
+  div p { color: red; }
+
+  /* Child */
+  div > p { font-weight: bold; }
+
+  /* Adjacent sibling */
+  h1 + p { color: orange; }
+
+  /* General sibling */
+  h1 ~ p { color: purple; }
+</style>
+</head>
+<body>
+  <h1 id="main">Heading</h1>
+  <p class="highlight">Paragraph 1</p>
+  <p>Paragraph 2</p>
+  <div>
+    <p>Inside div</p>
+  </div>
+</body>
+</html>
